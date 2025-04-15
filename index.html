@@ -4,47 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reginah Waithira Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
-<body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#work">Work</a></li>
-                <li><a href="#resume">Resume</a></li>
-                <li><a href="#contact">Contact</a></li>
+<body class="portfolio">
+    <header class="main-header">
+        <nav class="main-nav">
+            <ul class="nav-links">
+                <li class="nav-item"><a href="#home">Home</a></li>
+                <li class="nav-item"><a href="#about">About</a></li>
+                <li class="nav-item"><a href="#work">Work</a></li>
+                <li class="nav-item"><a href="#resume">Resume</a></li>
+                <li class="nav-item"><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
-    <main>
-        <section id="home">
-            <h1>Welcome to my Portfolio</h1>
-            <p>I am a software developer passionate about creating innovative solutions.</p>
-            <video controls width="320" height="240">
-                <source src="video.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-            <audio controls>
-                <source src="audio.mp3" type="audio/mpeg">
-                Your browser does not support the audio element.
-            </audio>
+    <main class="main-content">
+        <section id="home" class="home-section">
+            <h1 class="home-title">Welcome to my Portfolio</h1>
+            <p class="home-intro">I am a software developer passionate about creating innovative solutions.</p>
+            <div class="media-container">
+                <video controls width="320" height="240" class="home-video">
+                    <source src="video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <audio controls class="home-audio">
+                    <source src="audio.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
         </section>
 
-        <section id="about">
-            <h2>About Me</h2>
-            <p>A dedicated and passionate ICT graduate of Bachelor in Information Communication and Technology studying to become a software developer. I am proficient in HTML, CSS, JavaScript, and have experience with responsive web design. I am also familiar with Git for version control, possess strong problem-solving and debugging skills, and have a basic understanding of database concepts (e.g., SQL). I am eager to contribute to meaningful software projects. My foundational knowledge of networking, cybersecurity, and AI enhances my ability to develop well-rounded and secure applications.</p>
-            <ul>
-                <li>Critical and Analytical Thinking</li>
-                <li>Self-discipline</li>
-                <li>Communication Skills</li>
+        <section id="about" class="about-section">
+            <h2 class="about-title">About Me</h2>
+            <p class="about-description">A dedicated and passionate ICT graduate of Bachelor in Information Communication and Technology studying to become a software developer. I am proficient in HTML, CSS, JavaScript, and have experience with responsive web design. I am also familiar with Git for version control, possess strong problem-solving and debugging skills, and have a basic understanding of database concepts (e.g., SQL). I am eager to contribute to meaningful software projects. My foundational knowledge of networking, cybersecurity, and AI enhances my ability to develop well-rounded and secure applications.</p>
+            <ul class="skills-list">
+                <li class="skill-item">Critical and Analytical Thinking</li>
+                <li class="skill-item">Self-discipline</li>
+                <li class="skill-item">Communication Skills</li>
             </ul>
         </section>
 
-        <section id="work">
-            <h2>My Work</h2>
-            <p>Here are some of my projects:</p>
-            <table>
+        <section id="work" class="work-section">
+            <h2 class="work-title">My Work</h2>
+            <p class="work-intro">Here are some of my projects:</p>
+            <table class="projects-table">
                 <thead>
                     <tr>
                         <th>Project Name</th>
@@ -56,41 +62,41 @@
                     <tr>
                         <td>Learn git</td>
                         <td>A description of the steps covered in learning git.</td>
-                        <td><a href="https://github.com/Gothicrw/learn-git.git">Link to Project A</a></td>
+                        <td><a href="https://github.com/Gothicrw/learn-git.git" target="_blank" rel="noopener noreferrer">Link to Project A</a></td>
                     </tr>
                     <tr>
                         <td>Html basics</td>
                         <td>A description of the basics of html.</td>
-                        <td><a href="https://github.com/Gothicrw/html-assign.git">Link to Project B</a></td>
+                        <td><a href="https://github.com/Gothicrw/html-assign.git" target="_blank" rel="noopener noreferrer">Link to Project B</a></td>
                     </tr>
                 </tbody>
             </table>
         </section>
 
-        <section id="resume">
-            <h2>Resume</h2>
-            <p>Download my resume:</p>
-            <a href="your-resume.pdf" download>Download Resume</a>
+        <section id="resume" class="resume-section">
+            <h2 class="resume-title">Resume</h2>
+            <p class="resume-info">Download my resume:</p>
+            <a href="your-resume.pdf" download class="resume-download-link">Download Resume</a>
         </section>
 
-        <section id="contact">
-            <h2>Contact Me</h2>
-            <form action="#" method="post">
+        <section id="contact" class="contact-section">
+            <h2 class="contact-title">Contact Me</h2>
+            <form action="#" method="post" class="contact-form">
                 <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required><br><br>
+                <input type="text" id="name" name="name" required class="contact-input"><br><br>
 
                 <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required><br><br>
+                <input type="email" id="email" name="email" required class="contact-input"><br><br>
 
                 <label for="message">Message:</label><br>
-                <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+                <textarea id="message" name="message" rows="4" cols="50" required class="contact-textarea"></textarea><br><br>
 
-                <input type="submit" value="Submit">
+                <input type="submit" value="Submit" class="contact-submit-button">
             </form>
         </section>
-    </main> 
+    </main>
 
-    <footer>
+    <footer class="main-footer">
         <p>&copy; 2025 Reginah Waithira. All rights reserved.</p>
     </footer>
 </body>
